@@ -22,10 +22,12 @@ app5.component('login-display', {
     },
     methods: {
         onSubmit() {
+            import usersData from "./login.json"
+
             if (this.username === '' || this.password === '') {
                 alert('Username/Password Does Not Exist. Try Again!')
                 return
-            } else {
+            } elseif (this.password != usersData["1"].password) {
             }
         }
     },
