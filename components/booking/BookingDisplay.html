@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../assets/images/diamond_ring.png">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <title>Shaans' Appointment Booking</title>
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar">
+        <a href="../../index.html">Home</a> |
+        <a href="../photos/PhotoDisplay.html">Gallery</a> |
+        <a href="../catalog/CatalogDisplay.html">Catalog</a> |
+        <a href="../booking/BookingDisplay.html">Book Appointment</a> |
+        <a href="../employees/login/LoginDisplay.html"></a>
+      </div>
+      <appointment-display></appointment-display>
+    </div>
+    <script src="../../main.js"></script>
+    <script src="./appointmentDisplay.js"></script>
+    <script src="./appointmentForm.js"></script>
+    <script>const mountedApp = app4.mount('#app')</script>
+  </body>
+</html>

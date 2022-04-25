@@ -1,0 +1,9 @@
+{
+    "employees": {
+        "kevin": {
+            "job_title": "Owner",
+            "pay_rate": "N/A",
+            "pay_type": "Salary"
+        }
+    }
+}

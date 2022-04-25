@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "save": "^2.5.0",
+    "vue-input-facade": "^2.0.1"
+  }
+}
