@@ -6,6 +6,12 @@ app.component('home-display', {
         <h1>{{ title }}</h1>
         <h3>{{ caption }}</h3>
         <p>{{ info }}</p>
+        <div id="box-1">
+            <p>{{ promo1 }}</p>
+        </div>
+        <div id="box-2">
+            <p>{{ promo2 }}</a>
+        </div>
     </div>
     `,
     data() {
@@ -20,7 +26,9 @@ app.component('home-display', {
                 'See Us" button at the top of the page. To give us a call,',
                 'please click the "Call Us" button. To book an appointment,',
                 'click "Book Appointment".'
-            ]
+            ],
+            c: 'Select Gold, Silver, and Diamonds 50% OFF',
+            d: 'No Minimum Down Payment for items on Layaway'
         }
     },
     computed: {
@@ -43,6 +51,12 @@ app.component('home-display', {
         },
         caption() {
             return this.b
+        },
+        promo1() {
+            return this.c
+        },
+        promo2() {
+            return this.d
         }
     }
 })

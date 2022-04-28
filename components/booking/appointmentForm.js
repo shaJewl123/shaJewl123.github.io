@@ -11,8 +11,11 @@ app4.component('appointment-form', {
         <label for="email">Email Address:</label>
         <input id="email" placeholder="someemail@example.com" v-model="email">
 
-        <label for="phone">Enter Phone Number:</label>
-        <input id="phone" placeholder="(123) 456-7890">
+        <!-- FIGURE OUT WHY THIS INPUT WON'T CLEAR UPON SUBMISSION -->
+        <!-- ===================================================== -->
+        <label for="phne">Enter Phone Number:</label>
+        <input id="phne" placeholder="(123) 456-7890">
+        <!-- ===================================================== -->
 
         <label for="date">Enter Desired Appointment Date:</label>
         <input id="date" placeholder="MM/DD/YYYY" v-model="date">
@@ -30,7 +33,7 @@ app4.component('appointment-form', {
         return {
             name: '',
             email: '',
-            phone: '',
+            phne: '',
             date: '',
             time: '',
             description: ''
@@ -41,7 +44,7 @@ app4.component('appointment-form', {
             let newAppointment = {
                 name: this.name,
                 email: this.email,
-                phone: this.phone,
+                phne: this.phne,
                 date: this.date,
                 time: this.time,
                 description: this.description
@@ -51,7 +54,7 @@ app4.component('appointment-form', {
 
             this.name = ''
             this.email = ''
-            this.phone = ''
+            this.phne = ''
             this.date = ''
             this.time = ''
             this.description = ''

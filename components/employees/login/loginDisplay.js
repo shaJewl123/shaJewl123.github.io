@@ -27,7 +27,11 @@ app5.component('login-display', {
             if (this.username === '' || this.password === '') {
                 alert('Username/Password Does Not Exist. Try Again!')
                 return
-            } elseif (this.password != usersData["1"].password) {
+            } elseif (this.password != usersData.password) {
+                alert('Username/Password Does Not Exist. Try Again!')
+                return
+            } else {
+                window.open('../home/EmployeeHome.html')
             }
         }
     },
